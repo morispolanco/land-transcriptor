@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcriptor español - Habla en Español, Escribe Perfecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        success: '#4CAF50',
+                        info: '#2196F3',
+                        warning: '#FFC107',
+                        danger: '#607D8B'
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+
+        // Detect dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200">
+    <header class="bg-primary/10 dark:bg-primary/5 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h3 class="text-xl font-bold text-primary">Transcriptor español</h3>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#caracteristicas" class="hover:text-primary transition">Características</a></li>
+                    <li><a href="#instalacion" class="hover:text-primary transition">Instalación</a></li>
+                    <li><a href="https://payhip.com/b/aStAX" target="_blank" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition">Comprar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">Habla en Español, Escribe Perfecto.</h1>
+                <h2 class="text-xl mb-6 text-gray-600 dark:text-gray-400">La extensión para Chrome que transcribe tu voz al español y la corrige automáticamente con Inteligencia Artificial. ¡Comunícate sin errores y ahorra tiempo!</h2>
+                <a href="https://payhip.com/b/aStAX" target="_blank" class="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-primary/90 transition transform hover:scale-105 duration-200">Obtén la Extensión Ahora</a>
+                <p class="mt-4 text-gray-500 dark:text-gray-400">Precio: $19.00 USD (Pago único)</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg max-w-md">
+                    <!-- Using the image from the request -->
+                    <img src="https://pfst.cf2.poecdn.net/base/image/ceccbc9099be14abd41a497947e90641c6efe6baf22f37210c455c145b082321?w=359&h=399" alt="Interfaz de la extensión Transcriptor y Corrector Español" class="w-full rounded-lg border border-gray-200 dark:border-gray-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="py-12 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">¿Cansado de Escribir y Revisar en Español?</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <p class="text-lg">Sabemos que teclear textos largos, cuidar los acentos, la gramática y la ortografía en español puede ser tedioso y llevar mucho tiempo. Pasarás minutos valiosos revisando o, peor aún, enviarás mensajes con errores.</p>
+                <p class="text-lg font-medium">¡Hay una forma más inteligente! Nuestra extensión convierte tu voz en texto escrito al instante y utiliza la avanzada IA de Gemini para pulirlo, dejándolo listo para usar en segundos. Di adiós a los errores y hola a la eficiencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">Todo lo que Necesitas para Escribir Rápido y Bien</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                <div class="text-4xl mb-4">🎙️</div>
+                <h3 class="text-xl font-semibold mb-2">Transcripción Fácil</h3>
+                <p>Solo haz clic en "Grabar", habla con naturalidad y mira cómo tus palabras aparecen en la pantalla gracias al reconocimiento de voz del navegador.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                <div class="text-4xl mb-4">✨</div>
+                <h3 class="text-xl font-semibold mb-2">Corrección Inteligente</h3>
+                <p>El botón "Corregir" envía tu texto a Gemini AI para una revisión automática de ortografía y gramática, respetando siempre tu mensaje original.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                <div class="text-4xl mb-4">📋</div>
+                <h3 class="text-xl font-semibold mb-2">Copia y Pega Simple</h3>
+                <p>Con el botón "Copiar", el texto corregido va directo a tu portapapeles, listo para emails, documentos, chats o redes sociales.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                <div class="text-4xl mb-4">🗑️</div>
+                <h3 class="text-xl font-semibold mb-2">Limpieza Rápida</h3>
+                <p>¿Necesitas empezar de cero? El botón "Limpiar" borra ambos campos de texto al instante.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                <div class="text-4xl mb-4">🇪🇸</div>
+                <h3 class="text-xl font-semibold mb-2">Hecho para el Español</h3>
+                <p>Diseñado específicamente para entender y corregir las particularidades de nuestro idioma.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
+                <div class="text-4xl mb-4">🔒</div>
+                <h3 class="text-xl font-semibold mb-2">Control Total</h3>
+                <p>Tu voz se procesa en tu navegador, y el texto solo se envía a la IA de Gemini cuando tú haces clic en "Corregir".</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Install Section -->
+    <section id="instalacion" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center">Descarga e Instalación Rápida</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-12 flex justify-center">
+                    <a href="https://payhip.com/b/aStAX" target="_blank" class="bg-primary hover:bg-primary/90 text-white text-xl font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition flex items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Descargar la Extensión desde Payhip
+                    </a>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary text-white text-xl font-bold rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">1</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Descarga el Archivo</h3>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Haz clic en el botón de descarga para adquirir la extensión desde nuestra página segura en Payhip.</li>
+                                    <li>Completa el proceso en Payhip para descargar el archivo .zip.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary text-white text-xl font-bold rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">2</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Descomprime el Archivo</h3>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Busca el archivo .zip descargado (usualmente en tu carpeta "Descargas").</li>
+                                    <li>Haz clic derecho sobre él y selecciona "Extraer todo..." (o usa tu programa de descompresión).</li>
+                                    <li>Guarda la carpeta resultante en una ubicación permanente y fácil de recordar (ej. Documentos).</li>
+                                    <li class="font-bold text-red-600 dark:text-red-400">¡MUY IMPORTANTE! No borres esta carpeta después de la instalación, Chrome la necesita para que la extensión funcione.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary text-white text-xl font-bold rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">3</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Instala la Extensión en Chrome</h3>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Abre Google Chrome.</li>
+                                    <li>Escribe <code class="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">chrome://extensions/</code> en la barra de direcciones y pulsa Enter.</li>
+                                    <li>Activa el "Modo de desarrollador" (interruptor en la esquina superior derecha).</li>
+                                    <li>Haz clic en el botón "Cargar descomprimida" que aparecerá a la izquierda.</li>
+                                    <li>Navega hasta la ubicación donde guardaste la carpeta extraída en el paso 2. Selecciona la carpeta completa (la que contiene manifest.json) y haz clic en "Seleccionar carpeta".</li>
+                                    <li>¡Felicidades! La extensión "Transcriptor y Corrector" ya está instalada y su icono aparecerá en tu barra de herramientas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary text-white text-xl font-bold rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">4</div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Primer Uso y Permiso del Micrófono</h3>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Haz clic en el icono de la extensión.</li>
+                                    <li>Pulsa el botón verde "Grabar".</li>
+                                    <li>La primera vez, Chrome te pedirá permiso: "Transcriptor español quiere usar tu micrófono". Debes hacer clic en "Permitir" para que funcione.</li>
+                                    <li>¡Ahora sí! Habla para transcribir, detén, corrige y copia tu texto en español perfecto.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo/Preview Section (Optional) -->
+    <section class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">Así de Simple es Usarlo</h2>
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg text-center mb-6">
+                <p class="text-lg font-medium">Video demostrativo</p>
+                <div class="relative mt-2 rounded overflow-hidden shadow-lg cursor-pointer group" style="height: 500px;">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/46df9494388596096df3739f7e14a1ad0b2c31ed89bfe10d9a61bd65c1f71c28?w=612&h=466" alt="Vista previa del video demostrativo" class="w-full h-full object-contain bg-white dark:bg-gray-800">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-20 transition-all">
+                        <div class="w-16 h-16 rounded-full bg-primary bg-opacity-90 flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Haz clic para ver cómo funciona la extensión en tiempo real</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+                    <div class="text-3xl mb-2">🎙️</div>
+                    <p>1. Habla con naturalidad</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+                    <div class="text-3xl mb-2">✨</div>
+                    <p>2. Corrige con IA</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+                    <div class="text-3xl mb-2">📋</div>
+                    <p>3. Copia y usa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-primary/10 dark:bg-primary/5">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Transforma tu Voz en Texto Impecable Hoy Mismo</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Deja que la tecnología trabaje por ti. Ahorra tiempo, evita errores y comunícate con confianza en español. Descarga la extensión ahora.</p>
+            <a href="https://payhip.com/b/aStAX" target="_blank" class="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-10 rounded-lg text-xl shadow-lg transform hover:scale-105 transition">Descargar e Instalar Ahora</a>
+            <p class="mt-4 text-gray-600 dark:text-gray-400">Pago único de $19.00 USD • Sin suscripciones</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>© <span id="current-year"></span> Transcriptor español</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-primary transition">Política de Privacidad</a>
+                    <a href="#" class="hover:text-primary transition">Términos de Uso</a>
+                    <a href="#" class="hover:text-primary transition">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
